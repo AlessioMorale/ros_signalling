@@ -87,7 +87,8 @@ main(int argc, char **argv) {
         cache[blink.led].blink = blink;
         cache[blink.led].on = true;
         cache[blink.led].timeoutCounter = blink.msecOn;
-        ROS_INFO("led %d(%d.%d.%d)\n", blink.led, blink.R, blink.G, blink.B);
+        ROS_DEBUG("led %d(%d.%d.%d), On(%d)/Off(%d)", blink.led, blink.R,
+                  blink.G, blink.B, blink.msecOn, blink.msecOff);
         updated = true;
       } else {
         ROS_WARN("Received led command for a led higher (%d) than the maximum "
