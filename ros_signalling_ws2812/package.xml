@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_signalling_ws2812</name>
+  <version>1.0.0</version>
+  <description>ROS Signalling WS2812 LEDs support package</description>
+
+  <maintainer email="alessiomorale@gmail.com">alessio</maintainer>
+  <license>MIT</license>
+
+  <!-- <url type="website">http://wiki.ros.org/ros_signalling</url> -->
+  <author email="alessiomorale@gmail.com">Alessio Morale</author>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>ros_signalling</depend>
+  <exec_depend>message_runtime</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <export/>
+</package>
