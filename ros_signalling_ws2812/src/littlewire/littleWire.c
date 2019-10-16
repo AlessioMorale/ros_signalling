@@ -152,6 +152,10 @@ littleWire* littleWire_connect()
 	return tempHandle;
 }
 
+void littlewire_disconnect(littleWire * lwHandle){
+  usb_close(lwHandle);  
+}
+
 unsigned char readFirmwareVersion(littleWire* lwHandle)
 {
 	lwStatus=usb_control_msg(lwHandle, 0xC0, 34, 0, 0, rxBuffer, 8, USB_TIMEOUT);

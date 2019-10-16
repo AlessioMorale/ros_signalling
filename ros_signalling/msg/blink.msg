@@ -1,5 +1,6 @@
 # blink message
 uint8 led
+uint8 group
 uint8 R
 uint8 G
 uint8 B
