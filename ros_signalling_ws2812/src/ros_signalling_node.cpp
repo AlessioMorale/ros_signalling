@@ -70,6 +70,8 @@ for (int group = 0; group < NUM_GROUPS; group++) {
   while (ros::ok()) {
     if (!lw) {
       int count = littlewire_search();
+      ros::Duration(1.0).sleep();
+       
       if (count == 0) {
         ROS_INFO("No LittleWire found!\n");
         continue;

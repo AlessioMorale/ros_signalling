@@ -150,6 +150,14 @@ littleWire *littlewire_connect_bySerialNum(int mySerial);
 littleWire *littleWire_connect();
 
 /**
+ * Tries to connect to the first littleWire device that libusb can find.
+ *
+ * @param (none)
+ * @return littleWire pointer for healthy connection, NULL for a failed trial.
+ */
+void littlewire_disconnect(littleWire * lwHandle);
+
+/**
  * Reads the firmware version of the Little Wire \n
  * Format: 0xXY => X: Primary version Y: Minor version
  *
